@@ -1,0 +1,14 @@
+sequenceDiagram
+    participant A as Architect
+    participant D as Developer
+    participant Co as Code
+    participant R as Runtime
+    participant C as Contract
+    participant L as Library
+    
+    A ->> C: Design Contract
+    L ->> C: Verify Contract
+    D ->> Co: Write Software
+    L ->> Co: Verify software against Contract
+    Co ->> R: Execute code
+    L ->> R: Verify Execution
